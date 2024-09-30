@@ -7,20 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D75EC4982ADC4E2400CDE216 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75EC4972ADC4E2400CDE216 /* Meal.swift */; };
+		D75EC4A02ADD7F9800CDE216 /* AddMealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75EC49F2ADD7F9700CDE216 /* AddMealView.swift */; };
+		D75EC4A22ADF13EA00CDE216 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75EC4A12ADF13EA00CDE216 /* DayView.swift */; };
+		D7A87F022AE2FFCD007074D3 /* MealsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A87F012AE2FFCD007074D3 /* MealsView.swift */; };
 		D7B672122ADC4A4B001523BE /* MacroTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B672112ADC4A4B001523BE /* MacroTrackerApp.swift */; };
 		D7B672142ADC4A4B001523BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B672132ADC4A4B001523BE /* ContentView.swift */; };
 		D7B672162ADC4A4D001523BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7B672152ADC4A4D001523BE /* Assets.xcassets */; };
 		D7B672192ADC4A4D001523BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7B672182ADC4A4D001523BE /* Preview Assets.xcassets */; };
+		D7F987542AF3DE1E00CF3FA0 /* MacroTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D7F987522AF3DE1E00CF3FA0 /* MacroTracker.xcdatamodeld */; };
+		D7F987592AF3DF2B00CF3FA0 /* Meal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F987552AF3DF2B00CF3FA0 /* Meal+CoreDataClass.swift */; };
+		D7F9875A2AF3DF2B00CF3FA0 /* Meal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F987562AF3DF2B00CF3FA0 /* Meal+CoreDataProperties.swift */; };
+		D7F9875B2AF3DF2B00CF3FA0 /* Day+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F987572AF3DF2B00CF3FA0 /* Day+CoreDataClass.swift */; };
+		D7F9875C2AF3DF2B00CF3FA0 /* Day+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F987582AF3DF2B00CF3FA0 /* Day+CoreDataProperties.swift */; };
+		D7F9875E2AF3ED1D00CF3FA0 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F9875D2AF3ED1D00CF3FA0 /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D75EC4972ADC4E2400CDE216 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		D75EC49F2ADD7F9700CDE216 /* AddMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealView.swift; sourceTree = "<group>"; };
+		D75EC4A12ADF13EA00CDE216 /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
+		D7A87F012AE2FFCD007074D3 /* MealsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsView.swift; sourceTree = "<group>"; };
 		D7B6720E2ADC4A4B001523BE /* MacroTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacroTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B672112ADC4A4B001523BE /* MacroTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroTrackerApp.swift; sourceTree = "<group>"; };
 		D7B672132ADC4A4B001523BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D7B672152ADC4A4D001523BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7B672182ADC4A4D001523BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D7F987532AF3DE1E00CF3FA0 /* MacroTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MacroTracker.xcdatamodel; sourceTree = "<group>"; };
+		D7F987552AF3DF2B00CF3FA0 /* Meal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meal+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		D7F987562AF3DF2B00CF3FA0 /* Meal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meal+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		D7F987572AF3DF2B00CF3FA0 /* Day+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		D7F987582AF3DF2B00CF3FA0 /* Day+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		D7F9875D2AF3ED1D00CF3FA0 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +69,17 @@
 		D7B672102ADC4A4B001523BE /* MacroTracker */ = {
 			isa = PBXGroup;
 			children = (
+				D7F987552AF3DF2B00CF3FA0 /* Meal+CoreDataClass.swift */,
+				D7F987562AF3DF2B00CF3FA0 /* Meal+CoreDataProperties.swift */,
+				D7F987572AF3DF2B00CF3FA0 /* Day+CoreDataClass.swift */,
+				D7F987582AF3DF2B00CF3FA0 /* Day+CoreDataProperties.swift */,
+				D75EC4A12ADF13EA00CDE216 /* DayView.swift */,
+				D75EC49F2ADD7F9700CDE216 /* AddMealView.swift */,
+				D7F9875D2AF3ED1D00CF3FA0 /* DataController.swift */,
+				D7A87F012AE2FFCD007074D3 /* MealsView.swift */,
 				D7B672112ADC4A4B001523BE /* MacroTrackerApp.swift */,
-				D75EC4972ADC4E2400CDE216 /* Meal.swift */,
 				D7B672132ADC4A4B001523BE /* ContentView.swift */,
+				D7F987522AF3DE1E00CF3FA0 /* MacroTracker.xcdatamodeld */,
 				D7B672152ADC4A4D001523BE /* Assets.xcassets */,
 				D7B672172ADC4A4D001523BE /* Preview Content */,
 			);
@@ -140,9 +164,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D75EC4A22ADF13EA00CDE216 /* DayView.swift in Sources */,
 				D7B672142ADC4A4B001523BE /* ContentView.swift in Sources */,
-				D75EC4982ADC4E2400CDE216 /* Meal.swift in Sources */,
+				D7F9875A2AF3DF2B00CF3FA0 /* Meal+CoreDataProperties.swift in Sources */,
+				D7F987592AF3DF2B00CF3FA0 /* Meal+CoreDataClass.swift in Sources */,
+				D75EC4A02ADD7F9800CDE216 /* AddMealView.swift in Sources */,
+				D7F9875E2AF3ED1D00CF3FA0 /* DataController.swift in Sources */,
 				D7B672122ADC4A4B001523BE /* MacroTrackerApp.swift in Sources */,
+				D7F9875B2AF3DF2B00CF3FA0 /* Day+CoreDataClass.swift in Sources */,
+				D7A87F022AE2FFCD007074D3 /* MealsView.swift in Sources */,
+				D7F9875C2AF3DF2B00CF3FA0 /* Day+CoreDataProperties.swift in Sources */,
+				D7F987542AF3DE1E00CF3FA0 /* MacroTracker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +380,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D7F987522AF3DE1E00CF3FA0 /* MacroTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D7F987532AF3DE1E00CF3FA0 /* MacroTracker.xcdatamodel */,
+			);
+			currentVersion = D7F987532AF3DE1E00CF3FA0 /* MacroTracker.xcdatamodel */;
+			path = MacroTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D7B672062ADC4A4B001523BE /* Project object */;
 }

@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import CoreData
 
 @main
 struct MacroTrackerApp: App {
+    @StateObject var dataController = DataController()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .preferredColorScheme(.dark)
+                .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }

@@ -8,17 +8,41 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var id = UUID()
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var allDays:FetchedResults<Day>
+    @State var isShowing:Bool = false
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack{
+            List{
+                ForEach(allDays){day in
+                    NavigationLink{
+                        VStack{
+                            MealsView(day: day)
+                        }
+                        .padding()
+                    }label:{
+                        DayView(day: day)
+                    }
+                    
+                }
+                .onDelete(perform: {indexSet in
+
+                })
+            }
+            .onAppear{
+                let today = Day(context: moc)
+                today.date = Day.getDay(from: .now)
+                try? moc.save()
+                moc.reset()
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
 #Preview {
     ContentView()
 }
+
+
