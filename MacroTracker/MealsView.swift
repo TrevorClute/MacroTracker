@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct MealsView: View {
-    @State var id = UUID()
     var day:Day
+    @State var id = UUID()
+    @Binding var refreshCount:Int
     @State var isShowing:Bool = false
     var body: some View {
-        List{
+        VStack{
             
                 Text(day.displayDate)
                     .font(.largeTitle.smallCaps())
@@ -38,7 +39,7 @@ struct MealsView: View {
         .sheet(isPresented: $isShowing){
             AddMealView(date: Day.getDay(from: day.date ?? .distantPast))
                 .onDisappear{
-                    
+                    refreshCount+=1
                 }
         }
 

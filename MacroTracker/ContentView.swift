@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var id = UUID()
+    @State var refreshCount = 0
     @Environment(\.managedObjectContext) var moc
-    @FetchRequest(sortDescriptors: []) var allDays:FetchedResults<Day>
+    @FetchRequest(sortDescriptors:[.init(key: "date", ascending: false)]) var allDays:FetchedResults<Day>
     @State var isShowing:Bool = false
     var body: some View {
         NavigationStack{
@@ -18,7 +18,7 @@ struct ContentView: View {
                 ForEach(allDays){day in
                     NavigationLink{
                         VStack{
-                            MealsView(day: day)
+                            MealsView(day: day, refreshCount: $refreshCount)
                         }
                         .padding()
                     }label:{
